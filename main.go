@@ -14,21 +14,6 @@ type clicommand struct{
 	callback func() error
 }
 
-func getCommands() map[string]clicommand {
-	return map[string]clicommand{
-		"help": {
-			name: "help",
-			description: "Display a help message",
-			callback: commandHelp,
-		},
-		"exit":{
-			name: "exit",
-			description: "Exit the Pokedex",
-			callback: commandExit,
-		},
-	}
-}
-
 func main(){
 	//requirements
 	//create a way for the user to interact with the program
